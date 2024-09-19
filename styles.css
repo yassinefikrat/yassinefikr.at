@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Hack";
+    src: url("assets/fonts/Hack-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Hack";
+    src: url("assets/fonts/Hack-Bold.ttf");
+    font-weight: bold;
+}
+
+html, body {
+    font-family: "Hack";
+    margin: 0; padding: 0;
+}
+
+h1 {
+    font-size: 40;
+    font-weight: 700;
+    color: #281433;
+}
+
+.header {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #C6C6C6;
+}
+
+.page {
+    margin: 40px;
+}
+
+.menu {
+    font-family: "Hack";
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.menu-item {
+    padding: 1em;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background: repeating-linear-gradient(-45deg, black, black 3px, white 1px, white 8px);
+}
+
+.menu-item-link {
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.shaper {
+    background: gray url(assets/images/plane-solid.svg) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 10px;
+    padding-top: 120px;
+    box-sizing: border-box;
+    -webkit-animation: slide 30s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -512px 0; }
+}
